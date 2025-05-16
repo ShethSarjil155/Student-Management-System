@@ -1,0 +1,106 @@
+/* Overall page layout */
+.announcement-page {
+    display: flex;
+    height: 100%;
+    background-color: #121212;
+    /* Dark background */
+    color: #fff;
+}
+
+/* Main content styling */
+.announcement-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    /* Darker content background */
+}
+
+.announcement-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00d1b2;
+    /* Accent color for title */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.announcement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual announcement card */
+.announcement-card {
+    background-color: #2a2a2a;
+    /* Card background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Announcement header (Icon + Title) */
+.announcement-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.announcement-icon {
+    font-size: 24px;
+    color: #00d1b2;
+    /* Accent color for icon */
+}
+
+.announcement-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Message and Date */
+.announcement-card-message {
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.announcement-card-date {
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.pagination button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}

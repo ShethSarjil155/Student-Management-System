@@ -1,0 +1,157 @@
+/* Outer container styling */
+.student-login-outer-container {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1f1f, #121212);
+    /* Blackish gradient background */
+    color: #ffffff;
+    height: max-content;
+    /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Full width */
+}
+
+/* Main container styling */
+.student-login-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    /* Maximum width for larger screens */
+    background-color: #2c2c2c;
+    /* Card background with blackish theme */
+    border-radius: 15px;
+    height: 100vh;
+    /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    /* Subtle shadow for depth */
+    overflow: hidden;
+    /* Keeps children within rounded corners */
+}
+
+/* Right container styling (image) */
+.student-login-right-container {
+    flex: 1;
+    background: linear-gradient(135deg, #333333, #1f1f1f);
+    /* Blackish gradient side */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.student-login-educational-image {
+    max-width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+    /* Adds a shadow to the image */
+}
+
+/* Left container styling (form) */
+.student-login-left-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1f1f1f;
+    /* Darker background for the form */
+}
+
+.student-login-title {
+    text-align: center;
+    color: #ffffff;
+    /* White text for better contrast */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.student-login-form-group {
+    margin-bottom: 20px;
+}
+
+.student-login-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #dddddd;
+    /* Light grey for readability */
+}
+
+.student-login-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    /* Dark input background */
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.student-login-input:focus {
+    outline: none;
+    border: 1px solid #667eea;
+    /* Highlighted border on focus */
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    /* Glow effect */
+}
+
+.student-login-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    /* Green gradient button */
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.student-login-button:hover {
+    background: linear-gradient(135deg, #388e3c, #4caf50);
+    /* Inverted green gradient on hover */
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+    /* Hover shadow */
+}
+
+.student-login-error {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Placeholder styling */
+.student-login-input::placeholder {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .student-login-main-container {
+        flex-direction: column;
+    }
+
+    .student-login-right-container {
+        flex: 1;
+        order: 2;
+        /* Moves the image below the form */
+    }
+
+    .student-login-left-container {
+        flex: 1;
+        order: 1;
+        /* Ensures the form appears first */
+    }
+}

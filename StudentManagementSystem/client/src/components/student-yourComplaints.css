@@ -1,0 +1,82 @@
+.student-cm-div {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.student-complaint-box {
+    width: 80%;
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-back-btn {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.student-back-btn:hover {
+    color: #007bff;
+}
+
+.student-form-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.student-form-header h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.student-complaints-list {
+    margin-top: 20px;
+}
+
+.student-complaints-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.student-complaints-table th,
+.student-complaints-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.student-complaints-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.student-complaints-table tr:nth-child(even) {
+    background-color: #444;
+}
+
+.student-complaints-table tr:hover {
+    background-color: #555;
+}
+
+.student-delete-icon {
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.student-delete-icon:hover {
+    color: #c0392b;
+}
